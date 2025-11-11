@@ -1,5 +1,5 @@
 {
-  "name": "desafio-info-sistemas",
+  "name": "repo-notification-mongodb",
   "version": "1.0.0",
   "description": "Microsserviço",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/clodomirLima/desafio-info-sistemas"
+    "url": "https://github.com/clodomirLima/repo-notification-mongodb"
   },
   "author": "Clodomir REis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/clodomirLima/desafio-info-sistemas/issues"
+    "url": "https://github.com/clodomirLima/repo-notification-mongodb/issues"
   },
-  "homepage": "https://github.com/clodomirLima/desafio-info-sistemas#readme",
+  "homepage": "https://github.com/clodomirLima/repo-notification-mongodb#readme",
   "dependencies": {
     "chai": "^4.3.10",
     "dotenv": "^16.0.3",
