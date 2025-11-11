@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  # 🟢 Banco de dados MongoDB
+  mongo:
+    image: mongo:6
+    container_name: mongo_notification
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: notifications
+    volumes:
+      - mongo_data:/data/db
+
+  # 🚀 Aplicação Node.js
+  app:
+    build: .
+    container_name: notification_app
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    environment:
+      - PORT=3000
+      - MONGO_URI=mongodb://mongo:27017/notifications
+    volumes:
+      - .:/usr/src/app
+    command: npm run start
+
+volumes:
+  mongo_data:
