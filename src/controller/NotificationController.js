@@ -1,3 +1,4 @@
+// src/controller/NotificationController.js
 const NotificationService = require("../service/NotificationService");
 
 class NotificationController {
@@ -46,4 +47,4 @@ class NotificationController {
   }
 }
 
-module.exports = new NotificationController();
+module.exports = NotificationController;
